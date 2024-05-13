@@ -1,0 +1,38 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body{
+    background-color: var(--cream);
+}
+.parent .child-left img {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.parent .child-right{
+    margin-top: -0.19rem;
+    padding: 2rem;
+    background-color: var(--white);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.perfume{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+    color: var(--dark-grayish-blue);
+}
+.product-description{
+    font-size: 0.875rem;
+    font-family: "Montserrat", sans-serif;
+    color: var(--dark-grayish-blue);
+}
+
