@@ -12,12 +12,22 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/112393209d.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Frontend Mentor | Product preview card component</title>
   </head>
@@ -34,21 +44,30 @@
 
   Add to Cart -->
 
-    <div class="parent">
-      <div class="child-left">
-        <img alt="Gabrielle Essence" src="images/image-product-mobile.jpg" />
+    <main>
+      <div class="parent">
+        <div class="child-top">
+          <img alt="Gabrielle Essence" src="images/image-product-mobile.jpg" />
+        </div>
+        <div class="child-bottom">
+          <p class="perfume">Perfume</p>
+          <h1 class="main-heading">Gabrielle Essence Eau De Parfum</h1>
+          <p class="product-description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="prices">
+            <div class="new-price">$149.99</div>
+            <div class="old-price">$169.99</div>
+          </div>
+          <div class="section-btn">
+            <button>
+              <img src="/images/icon-cart.svg" alt="Cart Logo" />
+              <span> Add to Cart</span>
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="child-right">
-        <span class="perfume">P E R F U M E</span>
-        <h1 class="main-headin">Gabrielle Essence Eau De Parfum</h1>
-        <p class="product-description">
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-        <!-- <span class="new-price">$149.99</span>
-        <p><span class="old-price">$169.99</span></p>
-        <button class="button" data-icon="shopping-cart">Add to Cart</button> -->
-      </div>
-    </div>
+    </main>
   </body>
 </html>

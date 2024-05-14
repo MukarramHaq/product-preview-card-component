@@ -1,3 +1,4 @@
+/* top right bottom left */
 :root {
   --dark-cyan: hsl(158, 36%, 37%);
   --cream: hsl(30, 38%, 92%);
@@ -11,28 +12,209 @@
   box-sizing: border-box;
 }
 body{
-    background-color: var(--cream);
+  padding: 1rem;
+  background-color: var(--cream);
+  /* This can be used for every element in the div to have
+  a height of line */
+  line-height: 1.7;
 }
-.parent .child-left img {
+/* .parent{
+  I can use this for media querty to do desktop first
+  display: flex;
+  border: 1px solid black;
+  overflow: hidden;
+} */
+.parent .child-top img {
   width: 100%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
-.parent .child-right{
-    margin-top: -0.19rem;
-    padding: 2rem;
+.parent .child-bottom{
+    margin-top: -2rem;
+    padding: 1.6rem;
     background-color: var(--white);
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
 .perfume{
     font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     font-size: 0.875rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
     color: var(--dark-grayish-blue);
+
+}
+.main-heading{
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    /* font-size: 1.9rem; */
+    margin-top: -0.3rem;
+
 }
 .product-description{
     font-size: 0.875rem;
     font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-top: -0.5rem;
+    /* line-height: 1.7; */
     color: var(--dark-grayish-blue);
 }
+.prices > *{
+  display: inline-block;
+}
+.new-price{
+  font-size: 2rem;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  color: var(--dark-cyan)
+}
+.old-price{
+  font-family: "Montserrat", sans-serif;
+  color: var(--dark-grayish-blue);
+  transform: translate(1rem, -0.3rem);
+  text-decoration: line-through;
+}
+.section-btn button{
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
 
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  /* colors 
+  --clr-base: hsl(30, 38%, 92%);
+  --clr-accent: hsl(158, 36%, 37%);
+  --clr-accent-hover: hsl(158, 36%, 20%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-400: hsl(228, 12%, 48%);
+  --clr-neutral-900: hsl(212, 21%, 14%);
+
+  /* fonts 
+  --ff-primary: Montserrat;
+  --ff-secondary: Fraunces;
+
+  --fw-normal: 500;
+  --fw-bold: 700;
+
+  --fs-normal: 0.875rem;
+}
+
+body {
+  color: var(--clr-neutral-400);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-normal);
+  background-color: var(--clr-base);
+  line-height: 1.7;
+
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.product {
+  background-color: var(--clr-neutral-100);
+  overflow: hidden;
+  border-radius: 1rem;
+  margin: 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 600px;
+}
+
+.product-content {
+  padding: 1.5rem;
+
+  display: grid;
+  gap: 1rem;
+}
+
+.flex-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.product-category {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.25rem;
+}
+
+.product-title {
+  font-family: var(--ff-secondary);
+  color: var(--clr-neutral-900);
+  font-weight: var(--fw-bold);
+  line-height: 1;
+  font-size: 2rem;
+}
+
+.product-price-current {
+  font-family: var(--ff-secondary);
+  color: var(--clr-accent);
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+}
+
+.product-price-original {
+  text-decoration: line-through;
+}
+
+.product-button {
+  background-color: var(--clr-accent);
+  border: none;
+  color: var(--clr-neutral-100);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.product-button .shopping-cart {
+  content: "";
+  background: url(images/icon-cart.svg), no-repeat;
+  width: 15px;
+  height: 16px;
+}
+
+.product-button:is(:hover, :focus-visible) {
+  background-color: var(--clr-accent-hover);
+}
+
+@media (min-width: 600px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+  }
+  .product-content {
+    padding: 2rem;
+  }
+} */
